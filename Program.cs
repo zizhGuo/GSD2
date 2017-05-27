@@ -11,8 +11,16 @@ namespace ElevationMaster
 
         static void Main(string[] args)
         {
-            new EleMaster();
+            //new EleMaster();
+            Student a = new Student(10, 90);
+            Student b = new Student(11, 100);
+            Student c = a + b;
+            int d = a;
+            c.Display();
+            Console.WriteLine("Implicit conversion int {0}", d);
+            
         }
+        
         public void Program()
         {
 
