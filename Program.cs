@@ -11,16 +11,34 @@ namespace ElevationMaster
 
         static void Main(string[] args)
         {
-            //new EleMaster();
-            Student a = new Student(10, 90);
-            Student b = new Student(11, 100);
-            Student c = a + b;
-            int d = a;
-            c.Display();
-            Console.WriteLine("Implicit conversion int {0}", d);
-            
+            new EleMaster();
+
+            ///<summary>
+            ///Operator overloading programming practice from MSDN
+            ///https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/operator
+            /// </summary>
+
+            //Student a = new Student(10, 90);
+            //Student b = new Student(11, 100);
+            //Student c = a + b;
+            //int d = a;
+            //c.Display();
+            //Console.WriteLine("Implicit conversion int {0}", d);
+
+            ///<summary>
+            /// Static constructor and static readonly field programming practice from MSDN
+            /// https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/static-constructors
+            /// </summary>
+
+            //Bus bus1 = new Bus(71);
+            //Bus bus2 = new Bus(72);
+            //bus1.Drive();
+            //System.Threading.Thread.Sleep(25);
+            //bus2.Drive();
+            //Console.ReadKey();
+
         }
-        
+
         public void Program()
         {
 
@@ -69,10 +87,10 @@ namespace ElevationMaster
                     Console.WriteLine("Input a integer: ");
                     Num2 = int.Parse(Console.ReadLine());
                     //temp = Num2;
-                   // maxNum = Num2;
+                    // maxNum = Num2;
                     if (Num2 > 0)
                     {
-                       // minNum = maxNum;
+                        // minNum = maxNum;
                         ele2 = Math.Abs(Num2 - Num1);
 
                         if (ele2 > ele1)
