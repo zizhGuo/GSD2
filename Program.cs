@@ -6,13 +6,21 @@ namespace ElevationMaster
     {
         public EleMaster()
         {
-            Program();
+           // Program();
+
+            //Student a = new Student(10, 90);
+            //Student b = new Student(11, 100);
+            //Student c = a + b;
+            //int d = a;
+            //c.Display();
+            //Console.WriteLine("Implicit conversion int {0}", d);
+            //123
         }
 
         static void Main(string[] args)
         {
             new EleMaster();
-
+            Program();
             ///<summary>
             ///Operator overloading programming practice from MSDN
             ///https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/operator
@@ -39,7 +47,7 @@ namespace ElevationMaster
 
         }
 
-        public void Program()
+        public static void Program()
         {
 
             try
