@@ -19,8 +19,11 @@ namespace ElevationMaster
 
         static void Main(string[] args)
         {
-            new EleMaster();
-            Program();
+            // new EleMaster();
+            // Program();
+            var s = new Sentence(null);
+            Console.WriteLine($"The first character is {s.GetFirstCharacter()}");
+
             ///<summary>
             ///Operator overloading programming practice from MSDN
             ///https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/operator
