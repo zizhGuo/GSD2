@@ -21,8 +21,21 @@ namespace ElevationMaster
         {
             // new EleMaster();
             // Program();
-            var s = new Sentence(null);
-            Console.WriteLine($"The first character is {s.GetFirstCharacter()}");
+            //var s = new Sentence(null);
+            //Console.WriteLine($"The first character is {s.GetFirstCharacter()}");
+
+            Animals a = new ElevationMaster.Animals();
+            Pets b = new Pets();
+            Animals c = new Pets();
+           // Pets d = new Animals();
+            a.M1();
+            a.M2();
+            b.M1();
+            b.M2();
+            c.M1();
+            c.M2();
+
+
 
             ///<summary>
             ///Operator overloading programming practice from MSDN
