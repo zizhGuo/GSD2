@@ -48,6 +48,7 @@
     <Compile Include="OverrideTest.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Sentence.cs" />
+    <Compile Include="Shape.cs" />
     <Compile Include="Student.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

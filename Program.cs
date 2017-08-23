@@ -6,7 +6,7 @@ namespace ElevationMaster
     {
         public EleMaster()
         {
-           // Program();
+            // Program();
 
             //Student a = new Student(10, 90);
             //Student b = new Student(11, 100);
@@ -19,21 +19,39 @@ namespace ElevationMaster
 
         static void Main(string[] args)
         {
-            // new EleMaster();
-            // Program();
+            //new EleMaster();
+            //Program();
             //var s = new Sentence(null);
             //Console.WriteLine($"The first character is {s.GetFirstCharacter()}");
 
             Animals a = new ElevationMaster.Animals();
             Pets b = new Pets();
             Animals c = new Pets();
-           // Pets d = new Animals();
+            int abc = (int)3.15;
+            // Pets d = new Animals();
             a.M1();
             a.M2();
             b.M1();
             b.M2();
             c.M1();
+            //Console.WriteLine("abc = ",abc);
             c.M2();
+
+            ///<summary
+            ///Polymophism practice
+            ///</summary
+            ///
+
+            //System.Collections.Generic.List<Shape> shapes = new System.Collections.Generic.List<Shape>();
+            //shapes.Add(new Rectangle());
+            //shapes.Add(new Triangle());
+            //shapes.Add(new Circle());
+
+            //foreach (Shape s in shapes)
+            //{
+            //    s.Draw();
+            //}
+            //Console.ReadKey();
 
 
 
