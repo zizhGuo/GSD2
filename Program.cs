@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reflection;
 
 namespace ElevationMaster
 {
@@ -29,6 +30,15 @@ namespace ElevationMaster
             Animals c = new Pets();
             int abc = (int)3.15;
             // Pets d = new Animals();
+
+            Type d = Type.GetType("System Empty");
+            MemberInfo[] memberArray = d.GetMembers();
+            Console.WriteLine("There are {0} members in {1}", memberArray.Length, d.FullName);
+            //foreach (var member in memberArray)
+            //{
+            //    Console.WriteLine("Member {0} declared by (1)", member.Name, member.DeclaringType);
+            //}
+
             a.M1();
             a.M2();
             b.M1();
