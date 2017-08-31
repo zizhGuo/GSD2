@@ -34,7 +34,7 @@ namespace AlienZoo
                     ///</summary>
                     ///
                     Random rand = new Random();
-                    if (rand.NextDouble() > 0.5)
+                    if (rand.Next(1, 101) > 50)
                     {
                         Ayam freshman = new Ayam();
                         Creature[index] = freshman;
@@ -67,14 +67,29 @@ namespace AlienZoo
                                 if (typea.Name == nameof(Ayam))
                                 {
                                     index++;
-                                    Creature[index] = new Ayam();
+                                    Ayam newborn = new Ayam();
+                                    Random rand1 = new Random();
+                                    if (rand1.Next(1, 101) < newborn.matingChance)
+                                    {
+                                        Creature[index] = newborn;
+                                        Console.WriteLine("mating succeeded!The chances is {0} out of {1}", rand1.ToString(), newborn.matingChance);
+
+                                    }
+                                    else Console.WriteLine("matting failed!");
                                     Creature[index].IsAllowMate = true;
                                     Console.WriteLine("Mating Index = {0}", index);
                                 }
                                 else
                                 {
                                     index++;
-                                    Creature[index] = new Bixam();
+                                    Bixam newborn = new Bixam();
+                                    Random rand1 = new Random();
+                                    if (rand1.Next(1, 101) < newborn.matingChance)
+                                    {
+                                        Creature[index] = newborn;
+                                        Console.WriteLine("mating succeeded! The chances is {0} out of {1}", rand1.ToString(), newborn.matingChance);
+                                    }
+                                    else Console.WriteLine("matting failed!");
                                     Creature[index].IsAllowMate = true;
                                     Console.WriteLine("Mating Index = {0}", index);
                                 }
@@ -116,16 +131,16 @@ namespace AlienZoo
     }
     class Ayam : Creatures
     {
-        public float matingChance
+        public int matingChance
         {
-            get { return 1; }
+            get { return 100; }
         }
     }
     class Bixam : Creatures
     {
-        public float matingChance
+        public int matingChance
         {
-            get { return 1 / 3; }
+            get { return 30; }
         }
     }
 
