@@ -9,12 +9,21 @@ namespace AlienZoo
     class AlienBreedingSims
     {
         int days;
+        /// <summary>
+        ///These things should be initiated in constructor
+        ///Here are only for declarition
+        /// 
+        ///"bool isSimsOn = true;"
+        ///"int days = 0;"
+        ///"Creatures[] Creature = new Creatures[15];"
+        /// </summary>
         public AlienBreedingSims()
         {
-
+            
         }
-        public static void Sims()
+        public static void Sims() ///This needs to be non-static
         {
+            /// bool isSimsOn = true;
             bool isSimsOn = true;
             int days = 0;
             Creatures[] Creature = new Creatures[15];
